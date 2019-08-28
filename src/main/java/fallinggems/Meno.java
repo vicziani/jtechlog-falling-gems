@@ -1,3 +1,5 @@
+package fallinggems;
+
 public class Meno extends Thread {
 	
 	int[][] utvonal;

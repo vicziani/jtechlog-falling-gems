@@ -5,11 +5,10 @@
     <groupId>jtechlog.jtechlog-falling-gems</groupId>
     <artifactId>jtechlog-falling-gems</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>jtechlog-falling-gems</name>
-	
+    <version>1.0.0</version>
+
     <description>Falling Gems logikai játék</description>
-    <url>http://jtechlog.blogspot.com</url>
+    <url>http://www.jtechlog.hu</url>
     <inceptionYear>2000</inceptionYear>
 
     <developers>
@@ -26,58 +25,24 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>12</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.10</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <build>
-        <finalName>falling-gems</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.5</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.2</version>
+                <version>3.1.2</version>
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>FallingGemsApplication</mainClass>
+                            <mainClass>fallinggems.FallingGemsApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.1</version>
-                <configuration>
-                    <mainClass>FallingGemsApplication</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>        
+        </plugins>
     </build>
 </project>

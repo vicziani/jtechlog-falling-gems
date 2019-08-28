@@ -1,13 +1,14 @@
 ﻿Falling Gems játék
 ==================
 
-A Falling Gems egy egyszerű logikai játék. 
-Java applet. Maven-nel build-elhető, és a letöltést követően a 'mvn package exec:java' paranccsal 
-futtatható.
+A Falling Gems egy egyszerű ügyességi és logikai játék. 
+Mavennel buildelhető, a letöltést követően az `mvn package` paranccsal 
+buildelhető, az elkészült jar állomány `java -jar jtechlog-falling-gems-1.0.0.jar`
+paranccsal futtatható.
 
 A játék 2000-ben készült, így olyan objektumorientált programozási paradigmáknak 
-híján van, mint a responsibility, low cohesion vagy encapsulation.
+híján van, mint a high cohesion vagy low coupling.
 
-Felhasznált technológiák: Java, Java applet, 
+Felhasznált technológiák: Java SE, AWT 
 
 viczian.istvan a gmail-en

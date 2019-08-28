@@ -1,3 +1,4 @@
+package fallinggems;
 
 import java.awt.BorderLayout;
 import java.awt.Image;
@@ -19,11 +20,11 @@ public class FallingGemsApplication extends JFrame {
                     }
                 });
         
-        Image hatter = Toolkit.getDefaultToolkit().getImage(FallingGemsApplication.class.getResource("GemBack.gif")); 
-        Image vesztettkep = Toolkit.getDefaultToolkit().getImage(FallingGemsApplication.class.getResource("YouLoose.gif")); 
+        Image hatter = Toolkit.getDefaultToolkit().getImage(FallingGemsApplication.class.getResource("/GemBack.gif"));
+        Image vesztettkep = Toolkit.getDefaultToolkit().getImage(FallingGemsApplication.class.getResource("/YouLoose.gif"));
         Image[] kokepek = new Image[7];
         for (int i = 0; i < 7; i++) {
-            kokepek[i] = Toolkit.getDefaultToolkit().getImage(FallingGemsApplication.class.getResource(i + ".gif"));
+            kokepek[i] = Toolkit.getDefaultToolkit().getImage(FallingGemsApplication.class.getResource("/" + i + ".gif"));
         }
         panel.setHatter(hatter);
         panel.setVesztettkep(vesztettkep);
