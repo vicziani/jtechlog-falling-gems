@@ -37,7 +37,10 @@ public class FallingGemsApplication extends JFrame {
     }
     
     public static void main(String[] args) {
-        FallingGemsApplication app = new FallingGemsApplication();        
-        app.setVisible(true);
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            FallingGemsApplication app = new FallingGemsApplication();
+            app.setVisible(true);
+        });
+
     }
 }
